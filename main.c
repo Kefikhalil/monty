@@ -16,7 +16,8 @@ int main(int argc, char **argv)
 	size_t size = 0;
 	stack_t *stack = NULL;
 	unsigned int x = 1;
-	
+	char *storage = NULL;
+        FILE *descriptor;
 
 	storage = NULL;
 	if (argc != 2)

@@ -4,12 +4,12 @@
  * push - stack pushing operation
  * @stack: pointer to the struct
  * @ln : line numbers
- * Return: void
+ * Return: 0
 **/
 
 void push(stack_t **stack, unsigned int x)
 {
-	int wa;
+	int war = 0;
 	char *dp;
 	stack_t *head;
 
@@ -24,7 +24,7 @@ void push(stack_t **stack, unsigned int x)
 	}
 	war = atoi(dp);
 	head = malloc(sizeof(stack_t));
-	if (node == NULL)
+	if (head == NULL)
 	{
 		fprintf(stderr, "Error: malloc failed)");
 		clean_stack(*stack);
